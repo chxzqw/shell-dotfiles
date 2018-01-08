@@ -18,4 +18,4 @@ alias git-x-dotfiles='/usr/bin/git --git-dir=/home/sid/.x-dotfiles.git/ --work-t
 alias git-awesomerc='/usr/bin/git --git-dir=/home/sid/.config/awesome/.git/ --work-tree=/home/sid/.config/awesome/'
 alias git-openbox='/usr/bin/git --git-dir=/home/sid/.config/openbox/.git/ --work-tree=/home/sid/.config/openbox/'
 alias git-i3='/usr/bin/git --git-dir=/home/sid/.config/i3/.git/ --work-tree=/home/sid/.config/i3/'
-alias git-mail-server='/usr/bin/git --git-dir=/home/sid/docker/mail-server/.git/ --work-tree=/home/sid/docker/mail-server/'
+alias git-docker='/usr/bin/git --git-dir=/home/sid/docker/.git/ --work-tree=/home/sid/docker/'
