@@ -19,7 +19,15 @@ alias git-awesomerc='/usr/bin/git --git-dir=/home/sid/.config/awesome/.git/ --wo
 alias git-openbox='/usr/bin/git --git-dir=/home/sid/.config/openbox/.git/ --work-tree=/home/sid/.config/openbox/'
 alias git-i3='/usr/bin/git --git-dir=/home/sid/.config/i3/.git/ --work-tree=/home/sid/.config/i3/'
 alias git-docker='/usr/bin/git --git-dir=/home/sid/docker/.git/ --work-tree=/home/sid/docker/'
+alias docker-certbot-certonly='docker run -it --rm -p 443:443 -p 80:80 --name certbot \
+  -v "/etc/letsencrypt:/etc/letsencrypt" \
+  -v "/var/lib/letsencrypt:/var/lib/letsencrypt" \
+  certbot/certbot certonly'
 alias docker-certbot-renew='docker run -it --rm --name certbot \
   -v "/etc/letsencrypt:/etc/letsencrypt" \
   -v "/var/lib/letsencrypt:/var/lib/letsencrypt" \
   certbot/certbot renew'
+alias docker-certbot-delete='docker run -it --rm --name certbot \
+  -v "/etc/letsencrypt:/etc/letsencrypt" \
+  -v "/var/lib/letsencrypt:/var/lib/letsencrypt" \
+  certbot/certbot delete'
